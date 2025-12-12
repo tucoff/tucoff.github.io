@@ -1,39 +1,198 @@
-/* Adicione ou substitua no style.css */
+body {
+    background-color: #ffffff;
+    color: #000000;
+    font-family: 'Fira Code', monospace;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    padding: 50px 20px;
+    background: #ffffff;
+    /* Linha fina vermelha embaixo do header */
+    border-bottom: 2px solid #ff7474;
+}
+
+/* Foto de Perfil */
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #000000; /* Borda preta sólida */
+    display: block;
+    margin: 0 auto 20px auto;
+    transition: transform 0.3s ease;
+}
+
+.profile-pic:hover {
+    transform: scale(1.05);
+    border-color: #ff7474; /* Fica vermelha ao passar o mouse */
+}
+
+h1 { 
+    margin: 0; 
+    font-size: 2.5rem; 
+    color: #000000; 
+    font-weight: 700;
+}
+
+h2 { 
+    margin: 10px 0; 
+    font-size: 1.2rem; 
+    font-weight: normal; 
+    color: #ff7474; /* Detalhe em vermelho */
+}
+
+/* Links do Header */
+.social-links a {
+    color: #000000;
+    margin: 0 10px;
+    font-weight: bold;
+    border: 2px solid #000000;
+    padding: 5px 10px;
+    border-radius: 0px; /* Cantos retos combinam mais com esse estilo */
+    text-decoration: none;
+    transition: 0.2s;
+    display: inline-block;
+}
+
+.social-links a:hover {
+    background: #ff7474;
+    color: #ffffff;
+    border-color: #ff7474;
+}
 
 .bio {
     max-width: 800px;
     margin: 20px auto;
-    color: #b0b0b0;
+    color: #333333;
 }
 
 .bio strong {
-    color: #03dac6;
+    color: #ff7474;
 }
 
-/* Estilo para cards sem imagem (placeholder) */
+.portfolio {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+h3 { 
+    border-left: 5px solid #ff7474; 
+    padding-left: 10px; 
+    color: #000000;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* CARDS */
+.card {
+    background: #ffffff;
+    border: 2px solid #000000; /* Borda preta grossa */
+    border-radius: 0px; /* Cantos retos */
+    overflow: hidden;
+    transition: transform 0.2s;
+    box-shadow: 4px 4px 0px #000000; /* Sombra sólida estilo 'brutalismo' */
+}
+
+.card:hover { 
+    transform: translate(-2px, -2px); 
+    box-shadow: 6px 6px 0px #ff7474; /* Sombra fica vermelha no hover */
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 2px solid #000000;
+}
+
+.card-content { padding: 15px; }
+
+/* Título do Projeto */
+.card h4 {
+    margin: 0 0 10px 0;
+    color: #000000;
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: #444;
+}
+
+/* Tech Stack (Tags) */
+.tech-stack span {
+    background: #ffffff;
+    border: 1px solid #000000;
+    font-size: 0.75rem;
+    padding: 2px 6px;
+    margin-right: 5px;
+    font-weight: bold;
+    color: #000000;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+/* Botões */
+.btn {
+    display: block;
+    text-align: center;
+    background: #000000;
+    color: #ffffff;
+    padding: 10px;
+    margin-top: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.btn:hover { 
+    background: #ff7474; 
+    color: #ffffff;
+}
+
+/* Placeholders (Sem Imagem) */
 .card-img-placeholder {
     width: 100%;
     height: 180px;
-    background: #2c2c2c;
+    background: #ffffff;
+    border-bottom: 2px solid #000000;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 3rem;
-    color: #555;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ff7474;
+    letter-spacing: 2px;
 }
 
-/* Status "Em Progresso" */
+/* Status e Bloqueados */
 .status {
     display: block;
     margin-top: 15px;
-    font-size: 0.9rem;
-    color: #ffb74d; /* Laranja */
-    font-style: italic;
-    border-top: 1px solid #333;
-    padding-top: 10px;
+    font-size: 0.8rem;
+    color: #ff7474;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .card.locked {
-    border-color: #ffb74d; /* Borda laranja para diferenciar desenvolvimento */
-    opacity: 0.9;
+    opacity: 1; /* Mantive 1 para ficar nítido no tema branco */
+}
+
+footer {
+    text-align: center;
+    padding: 40px;
+    color: #888;
+    font-size: 0.8rem;
 }

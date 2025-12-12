@@ -1,5 +1,5 @@
 body {
-    background-color: #ffffff;
+    background-color: #747474;
     color: #000000;
     font-family: 'Fira Code', monospace;
     margin: 0;
@@ -10,7 +10,7 @@ body {
 header {
     text-align: center;
     padding: 50px 20px;
-    background: #ffffff;
+    background: #747474;
     /* Linha fina vermelha embaixo do header */
     border-bottom: 2px solid #ff7474;
 }

@@ -10,7 +10,7 @@ body {
 header {
     text-align: center;
     padding: 50px 20px;
-    background: #747474;
+    background: #ffffff;
     /* Linha fina vermelha embaixo do header */
     border-bottom: 2px solid #ff7474;
 }
@@ -44,6 +44,10 @@ h2 {
     font-size: 1.2rem; 
     font-weight: normal; 
     color: #ff7474; /* Detalhe em vermelho */
+}
+
+h3 { 
+    color: #ffffff;
 }
 
 /* Links do Header */

@@ -51,6 +51,14 @@ h3 {
 }
 
 /* Links do Header */
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
 .social-links a {
     color: #000000;
     margin: 0 10px;
@@ -256,5 +264,25 @@ footer {
 
     .lang-link {
         font-size: 0.85rem;
+    }
+}
+
+/* Mobile: social links as 2x2 grid on small screens */
+@media (max-width: 600px) {
+    .social-links {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        max-width: 360px;
+        margin: 10px auto;
+        justify-items: center;
+    }
+
+    .social-links a {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0; /* remove lateral margins to fit grid */
+        text-align: center;
     }
 }

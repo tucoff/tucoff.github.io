@@ -129,6 +129,22 @@ h3 {
     border-bottom: 2px solid #000000;
 }
 
+/* Video inside a card: match image sizing + border */
+.video-container {
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+    border-bottom: 2px solid #000000;
+    background: #000000;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
+}
+
 .card-content { padding: 15px; }
 
 /* Título do Projeto */
@@ -200,6 +216,50 @@ h3 {
 
 .card.locked {
     opacity: 1; /* Mantive 1 para ficar nítido no tema branco */
+}
+
+/* ARTICLE CARD (Published Articles) */
+.full-width-section {
+    max-width: 1200px;
+}
+
+.article-card {
+    background: #ffffff;
+    border: 2px solid #000000;
+    border-radius: 0px;
+    box-shadow: 6px 6px 0px #000000;
+    padding: 24px;
+    margin-top: 20px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.article-card:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: 9px 9px 0px #ff7474;
+}
+
+.article-content h4 {
+    margin: 0 0 10px 0;
+    color: #000000;
+}
+
+.journal-info {
+    margin: 0 0 14px 0;
+    color: #ff7474;
+    font-weight: bold;
+}
+
+.abstract {
+    margin: 0 0 16px 0;
+    color: #333333;
+    font-size: 0.95rem;
+}
+
+.article-card .btn {
+    display: inline-block;
+    width: auto;
+    padding: 10px 16px;
+    margin-top: 10px;
 }
 
 footer {
@@ -284,5 +344,10 @@ footer {
         box-sizing: border-box;
         margin: 0; /* remove lateral margins to fit grid */
         text-align: center;
+    }
+
+    .article-card {
+        padding: 16px;
+        box-shadow: 4px 4px 0px #000000;
     }
 }

@@ -39,6 +39,10 @@ h1 {
     font-weight: 700;
 }
 
+h1.tucoff-handle {
+    color: #740000;
+}
+
 h2 { 
     margin: 10px 0; 
     font-size: 1.2rem; 
